@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Abu Layla - Data Science Portfolio</title>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+  />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .tab-link {
+      color: #141414;
+      transition: color 0.3s ease;
+    }
+    .tab-link:hover {
+      color: #34A853;
+    }
+    .bg-accent-gray {
+      background-color: #f5f5f5;
+    }
+    .text-accent-green {
+      color: #34A853;
+    }
+    .border-accent-gray {
+      border-color: #e0e0e0;
+    }
+    .bg-green-light {
+      background-color: #e8f5e9;
+    }
+    .hover-bg-green {
+      background-color: #34A853;
+    }
+    .button-green {
+      background-color: #34A853;
+      border-radius: 8px;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .button-green:hover {
+      background-color: #2c9b42;
+    }
+    /* New class for skill and project boxes */
+    .bg-skill-box, .bg-project-box {
+      background-color: #e8f5e9; /* Light green color */
+      border: 1px solid #e0e0e0; /* Subtle border */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .bg-skill-box:hover, .bg-project-box:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #34A853;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2c9b42;
+    }
+  </style>
+</head>
+<body class="font-sans bg-white min-h-screen">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-10 py-5 border-b border-accent-gray bg-green-light">
+    <div class="flex items-center gap-4">
+      <i class="fas fa-chart-line text-3xl text-black"></i> <!-- Pandas-like icon -->
+      <h2 class="text-xl font-bold text-black">Data Science Portfolio</h2>
+    </div>
+    <div class="flex items-center gap-6">
+      <nav class="flex gap-4">
+        <a href="#about" class="tab-link text-sm font-medium">About</a>
+        <a href="#skills" class="tab-link text-sm font-medium">Skills</a>
+        <a href="#projects" class="tab-link text-sm font-medium">Projects</a>
+        <a href="#contact" class="tab-link text-sm font-medium">Contact</a>
+      </nav>
+      <a
+        href="https://www.linkedin.com/in/omar-abulayla/"
+        target="_blank"
+        class="px-4 py-2 text-sm font-bold text-white button-green hover:bg-green-700"
+      >
+        Let's Connect
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-10 py-10 space-y-16">
+    <!-- Profile Section -->
+    <section id="about" class="flex flex-col items-start md:flex-row gap-6" data-aos="fade-up">
+      <!-- Profile Picture -->
+      <div class="w-40 h-40 rounded-full bg-accent-gray overflow-hidden shadow-lg">
+        <img
+          src="https://omarabulayla.github.io/portfolio_old/pics/Omar2.png"
+          alt="Profile Picture"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <!-- About Me Section -->
+      <div class="space-y-4 max-w-xl">
+        <h1 class="text-3xl font-bold text-black">Omar Abu Layla</h1>
+        <p class="text-gray-700 text-center md:text-left">
+          Passionate about Data Science and Machine Learning.
+        </p>
+        <div class="text-gray-700 text-left">
+          <h3 class="text-xl font-semibold text-accent-green">Professional Development</h3>
+          <p>
+            <strong>Associate Data Scientist in Python (DataCamp)</strong><br />
+            I am currently enrolled in DataCamp’s <strong>Associate Data Scientist in Python</strong> career track, a comprehensive program designed to build expertise in Python programming, data analysis, and machine learning. This track consists of <strong>23 courses</strong> totaling <strong>90 hours</strong> of hands-on learning, covering foundational to intermediate data science skills.
+          </p>
+        </div>
+
+        <!-- Small separation between sections -->
+        <div class="my-4"></div>
+
+        <div class="text-gray-700 text-left">
+          <p><strong>Topics Covered:</strong></p>
+          <ul class="list-disc pl-5 space-y-1"> <!-- Reduced spacing with space-y-1 -->
+            <li><strong>Programming Foundations:</strong> Intermediate Python, Python Toolbox, and efficient coding practices.</li>
+            <li><strong>Data Manipulation & Analysis:</strong> pandas for data wrangling, cleaning, and exploratory data analysis (EDA).</li>
+            <li><strong>Data Visualization:</strong> Creating insightful visualizations using Matplotlib and Seaborn.</li>
+            <li><strong>Data Cleaning & Importing:</strong> Handling missing data, transforming datasets, and ensuring data quality.</li>
+            <li><strong>Machine Learning Foundations:</strong> Supervised and unsupervised learning techniques, including regression, classification, clustering, and feature engineering.</li>
+            <li><strong>Statistical Analysis:</strong> Applying statistical methods to analyze data and draw meaningful conclusions.</li>
+            <li><strong>SQL for Data Science:</strong> Querying and manipulating relational databases for data analysis.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="space-y-4" data-aos="fade-up">
+      <h3 class="text-2xl font-bold text-black">Skills</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fab fa-python"></i> Python
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-database"></i> SQL
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-chart-line"></i> Pandas
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-calculator"></i> NumPy
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-chart-bar"></i> Matplotlib
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-chart-pie"></i> Seaborn
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-brain"></i> Machine Learning
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-chart-area"></i> Statistical Analysis
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-broom"></i> Data Cleaning
+        </span>
+        <span class="px-4 py-2 text-sm font-medium bg-skill-box rounded-lg flex items-center gap-2">
+          <i class="fas fa-search"></i> Exploratory Data Analysis (EDA)
+        </span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="space-y-4" data-aos="fade-up">
+      <h3 class="text-2xl font-bold text-black">Projects</h3>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Project 1: Analyzing Test Scores Across NYC Public Schools -->
+        <div class="p-4 bg-project-box rounded-lg">
+          <h4 class="text-lg font-medium text-black">NYC School Test Scores Analysis</h4>
+          <p class="text-sm text-gray-600"></p>
+          <p class="mt-2 text-sm text-gray-700">
+            Analyzed NYC public school test scores using data manipulation and visualization techniques to identify performance trends across districts.
+          </p>
+          <a
+            href="https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/NY%20Schools.py"
+            target="_blank"
+            class="mt-2 inline-block text-sm text-accent-green hover:underline"
+          >
+            View Project Code
+          </a>
+        </div>
+
+        <!-- Project 2: Movie Data Analysis -->
+        <div class="p-4 bg-project-box rounded-lg">
+          <h4 class="text-lg font-medium text-black">Movie Data Analysis</h4>
+          <p class="text-sm text-gray-600"></p>
+          <p class="mt-2 text-sm text-gray-700">
+            Explored movie data to analyze relationships between budget, revenue, and ratings using Python, Pandas, and Seaborn.
+          </p>
+          <a
+            href="https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/netflix%20-%20Copy.py"
+            target="_blank"
+            class="mt-2 inline-block text-sm text-accent-green hover:underline"
+          >
+            View Project Code
+          </a>
+        </div>
+
+        <!-- Project 3: Supermarket Sales Analysis -->
+        <div class="p-4 bg-project-box rounded-lg">
+          <h4 class="text-lg font-medium text-black">Supermarket Sales Analysis</h4>
+          <p class="text-sm text-gray-600"></p>
+          <p class="mt-2 text-sm text-gray-700">
+            Analyzed supermarket sales data to identify trends in product performance, customer behavior, and branch efficiency.
+          </p>
+          <a
+            href="https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/Supermarket%20Analysis.py"
+            target="_blank"
+            class="mt-2 inline-block text-sm text-accent-green hover:underline"
+          >
+            View Project Code
+          </a>
+        </div>
+
+        <!-- Project 4: Key Differences in Pitch for Healthy vs. Sick PD Individuals -->
+        <div class="p-4 bg-project-box rounded-lg">
+          <h4 class="text-lg font-medium text-black">Pitch Analysis in Parkinson’s Disease</h4>
+          <p class="text-sm text-gray-600"></p>
+          <p class="mt-2 text-sm text-gray-700">
+            Analyzed vocal pitch data to identify differences between healthy individuals and those with Parkinson’s Disease (PD). Using Python, Pandas, Matplotlib, and Seaborn, I processed and visualized the data to highlight distinctive vocal characteristics in PD patients. This project demonstrates the potential of pitch-related metrics in early diagnosis and disease monitoring.
+          </p>
+          <a
+            href="https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/Parkinsons"
+            target="_blank"
+            class="mt-2 inline-block text-sm text-accent-green hover:underline"
+          >
+            View Project Code
+          </a>
+        </div>
+
+        <!-- Project 5: Breast Cancer Dataset Exploration -->
+        <div class="p-4 bg-project-box rounded-lg">
+          <h4 class="text-lg font-medium text-black">Breast Cancer Dataset Analysis</h4>
+          <p class="text-sm text-gray-600"></p>
+          <p class="mt-2 text-sm text-gray-700">
+            Explored a Breast Cancer dataset to analyze tumor characteristics and their correlation with diagnosis (Benign or Malignant). Using Python, Seaborn, and Matplotlib, I visualized tumor features and identified key patterns. Based on the highest correlation with diagnosis, I built a model to predict tumor type using mean radius size. This project lays the groundwork for predictive modeling in healthcare.
+          </p>
+          <a
+            href="https://github.com/OmarAbuLayla/portfolio_old/blob/main/projects/Breastcancer.py"
+            target="_blank"
+            class="mt-2 inline-block text-sm text-accent-green hover:underline"
+          >
+            View Project Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="space-y-4" data-aos="fade-up">
+      <h3 class="text-2xl font-bold text-black">Contact</h3>
+      <p class="text-gray-700">
+        Feel free to
+        <a
+          href="https://www.linkedin.com/in/omar-abulayla/"
+          target="_blank"
+          class="text-accent-green hover:underline"
+        >
+          connect with me on LinkedIn
+        </a>
+        or send an email to
+        <a
+          href="mailto:O.Abulayla@outlook.com"
+          class="text-accent-green hover:underline"
+        >
+          O.Abulayla@outlook.com
+        </a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="px-10 py-5 border-t border-accent-gray bg-green-light">
+    <p class="text-center text-sm text-gray-600">Feel free to reach out—I'd love to connect!</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800, // Animation duration
+      easing: 'ease-in-out', // Easing type
+      once: true, // Animate only once
+    });
+  </script>
+</body>
+</html>
