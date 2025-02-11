@@ -3,9 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df1 = pd.read_csv(r"C:\Users\amoor\OneDrive\Desktop\Data Analysis Certification\Data Science Track\Projects\Project7 Airbnb market\airbnb_price.csv")
-df2 = pd.read_excel(r"C:\Users\amoor\OneDrive\Desktop\Data Analysis Certification\Data Science Track\Projects\Project7 Airbnb market\airbnb_room_type.xlsx")
-df3 = pd.read_csv(r"C:\Users\amoor\OneDrive\Desktop\Data Analysis Certification\Data Science Track\Projects\Project7 Airbnb market\airbnb_last_review.tsv", sep="\t")
+df1 = pd.read_csv("airbnb_price.csv")
+df2 = pd.read_excel(airbnb_room_type.xlsx")
+df3 = pd.read_csv(airbnb_last_review.tsv", sep="\t")
 
 df_merge = pd.merge(df1,df2, on= "listing_id", how="inner")
 df = pd.merge(df_merge, df3, on="listing_id", how="inner")
